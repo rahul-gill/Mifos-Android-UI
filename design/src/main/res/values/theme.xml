@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Mifos.DesignSystem.Theme.Base" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="android:textColor">?attr/mfColorText</item>
+        <item name="android:textColorLink">?attr/mfColorLink</item>
+        <item name="colorError">?attr/mfColorError</item>
+
+        <!-- Colors -->
+        <item name="mfColorPrimary">@color/mf_primary</item>
+        <item name="mfColorBackground">@color/mf_background</item>
+        <item name="mfColorBasic">@color/mf_basic</item>
+        <item name="mfColorDisabled">@color/mf_disabled</item>
+        <item name="mfColorText">@color/mf_text</item>
+        <item name="mfColorTextReverse">@color/mf_text_reverse</item>
+        <item name="mfColorTextDisabled">@color/mf_text_disabled</item>
+        <item name="mfColorSuccess">@color/mf_success</item>
+        <item name="mfColorLink">@color/mf_link</item>
+        <item name="mfColorWarning">@color/mf_warning</item>
+        <item name="mfColorError">@color/mf_error</item>
+
+        <!-- Typography -->
+        <item name="mfTypographyHeadline1">@style/Mifos.DesignSystem.Typography.Headline1</item>
+        <item name="mfTypographyHeadline2">@style/Mifos.DesignSystem.Typography.Headline2</item>
+        <item name="mfTypographyHeadline3">@style/Mifos.DesignSystem.Typography.Headline3</item>
+        <item name="mfTypographyHeadline4">@style/Mifos.DesignSystem.Typography.Headline4</item>
+        <item name="mfTypographyHeadline5">@style/Mifos.DesignSystem.Typography.Headline5</item>
+        <item name="mfTypographyHeadline6">@style/Mifos.DesignSystem.Typography.Headline6</item>
+        <item name="mfTypographySubtitle1">@style/Mifos.DesignSystem.Typography.Subtitle1</item>
+        <item name="mfTypographySubtitle2">@style/Mifos.DesignSystem.Typography.Subtitle2</item>
+        <item name="mfTypographyParagraph1">@style/Mifos.DesignSystem.Typography.Paragraph1</item>
+        <item name="mfTypographyParagraph2">@style/Mifos.DesignSystem.Typography.Paragraph2</item>
+        <item name="mfTypographyCaption1">@style/Mifos.DesignSystem.Typography.Caption1</item>
+        <item name="mfTypographyCaption2">@style/Mifos.DesignSystem.Typography.Caption2</item>
+        <item name="mfTypographyLabel">@style/Mifos.DesignSystem.Typography.Label</item>
+        <item name="mfTypographyButton">@style/Mifos.DesignSystem.Typography.Button</item>
+
+    </style>
+
+
+</resources>

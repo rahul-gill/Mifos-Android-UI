@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colors -->
+    <attr name="mfColorPrimary" format="color" />
+    <attr name="mfColorBackground" format="color" />
+    <attr name="mfColorBasic" format="color" />
+    <attr name="mfColorDisabled" format="color" />
+    <attr name="mfColorText" format="color" />
+    <attr name="mfColorTextReverse" format="color" />
+    <attr name="mfColorTextDisabled" format="color" />
+    <attr name="mfColorSuccess" format="color" />
+    <attr name="mfColorLink" format="color" />
+    <attr name="mfColorWarning" format="color" />
+    <attr name="mfColorError" format="color" />
+
+    <!-- Typography -->
+    <attr name="mfTypographyHeadline1" format="reference" />
+    <attr name="mfTypographyHeadline2" format="reference" />
+    <attr name="mfTypographyHeadline3" format="reference" />
+    <attr name="mfTypographyHeadline4" format="reference" />
+    <attr name="mfTypographyHeadline5" format="reference" />
+    <attr name="mfTypographyHeadline6" format="reference" />
+    <attr name="mfTypographySubtitle1" format="reference" />
+    <attr name="mfTypographySubtitle2" format="reference" />
+    <attr name="mfTypographyParagraph1" format="reference" />
+    <attr name="mfTypographyParagraph2" format="reference" />
+    <attr name="mfTypographyCaption1" format="reference" />
+    <attr name="mfTypographyCaption2" format="reference" />
+    <attr name="mfTypographyLabel" format="reference" />
+    <attr name="mfTypographyButton" format="reference" />
+
+</resources>

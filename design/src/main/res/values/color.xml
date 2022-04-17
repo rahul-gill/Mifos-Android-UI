@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mf_primary">#3366FF</color>
+    <color name="mf_background">#FFFFFF</color>
+    <color name="mf_basic">#8F9BB3</color>
+    <color name="mf_text">#192038</color>
+    <color name="mf_text_reverse">#FFFFFF</color>
+    <color name="mf_success">#00E096</color>
+    <color name="mf_link">#0095FF</color>
+    <color name="mf_warning">#FFAA00</color>
+    <color name="mf_error">#FF3D71</color>
+</resources>

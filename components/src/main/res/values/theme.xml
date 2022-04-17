@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Mifos.DesignSystem.Theme" parent="Mifos.DesignSystem.Theme.Base">
+        <item name="mfStylePrimaryButton">@style/Mifos.DesignSystem.Component.Button.Primary</item>
+        <item name="mfStyleTextView">@style/Mifos.DesignSystem.Component.TextView</item>
+    </style>
+
+</resources>

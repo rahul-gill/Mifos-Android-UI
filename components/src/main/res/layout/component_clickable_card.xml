@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:scaleType="centerCrop"
+            tools:background="@color/mf_basic"
+            app:layout_constraintDimensionRatio="h,1:1"
+            android:layout_gravity="top|start"
+            tools:ignore="ContentDescription" />
+
+        <org.mifos.ui.components.MfTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="8dp"
+            tools:text="Button"
+            style="@style/Mifos.DesignSystem.Typography.Label" />
+        <org.mifos.ui.components.MfTextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            tools:text="Button"
+            style="@style/Mifos.DesignSystem.Typography.SubText" />
+</merge>

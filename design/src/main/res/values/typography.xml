@@ -53,6 +53,12 @@
         <item name="android:textStyle">normal</item>
     </style>
 
+    <style name="Mifos.DesignSystem.Typography.SubText" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/mfColorBasic</item>
+    </style>
+
     <style name="Mifos.DesignSystem.Typography.Caption1" parent="TextAppearance.MaterialComponents.Caption">
         <item name="android:textSize">12sp</item>
         <item name="android:textStyle">normal</item>
@@ -66,8 +72,6 @@
     <style name="Mifos.DesignSystem.Typography.Label">
         <item name="android:textSize">12sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="textAllCaps">true</item>
     </style>
 
     <style name="Mifos.DesignSystem.Typography.Button" parent="TextAppearance.MaterialComponents.Button">

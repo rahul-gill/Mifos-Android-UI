@@ -2,4 +2,14 @@
 <resources>
     <attr name="mfStylePrimaryButton" format="reference" />
     <attr name="mfStyleTextView" format="reference" />
+
+    <declare-styleable name="MfClickableCard">
+        <attr name="title" format="string"/>
+        <attr name="description" format="string"/>
+        <attr name="iconSrc" format="reference"/>
+
+        <attr name="titleTint" format="color"/>
+        <attr name="descriptionTint" format="color"/>
+        <attr name="iconTint" format="color"/>
+    </declare-styleable>
 </resources>

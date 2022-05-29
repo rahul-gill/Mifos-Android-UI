@@ -23,7 +23,8 @@
         android:layout_height="wrap_content"
         app:title="Theme"
         app:description="Choose your theme"
-        app:iconSrc="@drawable/ic_baseline_invert_colors_24" />
+        app:iconSrc="@drawable/ic_baseline_invert_colors_24"
+        />
 
     <org.mifos.ui.components.MfClickableCard
         android:layout_width="match_parent"
@@ -38,6 +39,28 @@
         app:title="Update endpoint"
         app:description="Change your endpoint configurations"
         app:iconSrc="@drawable/ic_baseline_restore_24" />
+
+    <org.mifos.ui.components.MfClickableCard
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Update endpoint"
+        app:iconSrc="@drawable/ic_baseline_restore_24" />
+
+    <org.mifos.ui.components.MfClickableCard
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Update endpoint"
+        app:description="Change your endpoint configurations"/>
+
+    <org.mifos.ui.components.MfClickableCard
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Update endpoint" />
+
+    <org.mifos.ui.components.MfPinEntryEditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:maxLength="4"/>
 
 
 

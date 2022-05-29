@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
         <entry key="components/src/main/res/drawable/ripple.xml" value="0.2625" />
         <entry key="components/src/main/res/layout/component_clickable_card.xml" value="0.35260416666666666" />
+        <entry key="demoApp/src/main/res/drawable/ic_baseline_restore_24.xml" value="0.2625" />
         <entry key="demoApp/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
       </map>
     </option>

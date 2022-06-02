@@ -2,6 +2,7 @@
 <resources>
     <attr name="mfStylePrimaryButton" format="reference" />
     <attr name="mfStyleTextView" format="reference" />
+    <attr name="mfStyleEditTextLayout" format="reference" />
 
     <declare-styleable name="MfClickableCard">
         <attr name="title" format="string"/>

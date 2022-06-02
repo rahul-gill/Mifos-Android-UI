@@ -3,6 +3,7 @@
 
     <style name="Mifos.DesignSystem.Theme.Base" parent="Theme.MaterialComponents.Light.NoActionBar">
 
+        <item name="colorPrimary">?attr/mfColorPrimary</item>
         <item name="android:textColor">?attr/mfColorText</item>
         <item name="android:textColorLink">?attr/mfColorLink</item>
         <item name="colorError">?attr/mfColorError</item>

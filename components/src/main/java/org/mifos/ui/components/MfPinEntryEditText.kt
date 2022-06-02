@@ -9,6 +9,9 @@ import android.view.inputmethod.EditorInfo
 import org.mifos.ui.components.util.dpToFloat
 import org.mifos.ui.components.util.getThemeColor
 
+/**
+ * see:  [alphamu/PinEntryEditText](https://github.com/alphamu/PinEntryEditText)
+ */
 class MfPinEntryEditText @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,

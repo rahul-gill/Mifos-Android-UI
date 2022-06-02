@@ -21,4 +21,9 @@
     <style name="Mifos.DesignSystem.Component.ClickableCard" parent="Widget.MaterialComponents.CardView">
         <item name="iconTint">@android:color/black</item>
     </style>
+
+    <style name="Mifos.DesignSystem.Component.EditTextLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">?attr/mfColorBasic</item>
+        <item name="boxStrokeErrorColor">?attr/mfColorError</item>
+    </style>
 </resources>

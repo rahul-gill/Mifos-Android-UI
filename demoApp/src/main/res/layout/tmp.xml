@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!--screen subsection heading-->
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Heading: Account Summary"
+        android:textSize="24sp"
+        android:textColor="#000000"/>
+    <!--    small title not much focus taking-->
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Secondary Heading: Account Balance"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <!--big bold text for things having focus-->
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="$ 244566334.555"/>
+
+    <!--basic style-->
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:text="Body text: Above Loan and Savings account balance are calculated on behalf of your all savings and loan accounts."
+        android:textSize="16sp"/>
+
+
+    <!--less focus text like all rights reserved @copyright etc-->
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="All rights reserved."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="high focus color"
+            android:textColor="#000000"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mid focus color"
+            android:textColor="#BB666666"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="low focus color"
+            android:textColor="#D1D1D1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_marginVertical="16dp"/>
+
+
+    <!--solid button-->
+    <com.google.android.material.button.MaterialButton
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:text="Solid Button Style"
+        android:textColor="#ffffff"
+        />
+    <!--outlined button-->
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="40dp"
+        android:text="Outline Button"
+        android:layout_marginBottom="8dp"
+        app:strokeColor="@color/mf_primary"
+        android:textColor="?attr/colorPrimary"/>
+    <!--borderless button-->
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="40dp"
+        android:text="Borderless text buton"
+        android:textColor="?attr/colorPrimary"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_marginVertical="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="16dp"
+        >
+        <com.google.android.material.card.MaterialCardView android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="8dp"
+            android:backgroundTint="@color/mf_primary"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="100"
+                    app:srcCompat="@drawable/ic_baseline_translate_24"
+                    app:tint="#ffffff" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    app:autoSizeTextType="uniform"
+                    android:text="Translate"
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="8dp"
+            app:strokeColor="@color/mf_primary"
+            style="@style/Widget.Material3.CardView.Outlined">
+
+            <LinearLayout
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="100"
+                    app:srcCompat="@drawable/ic_baseline_translate_24"
+                    app:tint="?attr/colorPrimary" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    app:autoSizeTextType="uniform"
+                    android:text="Translate"
+                    android:textColor="?attr/colorPrimary"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="8dp"
+            android:elevation="0dp">
+
+            <LinearLayout
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="100"
+                    app:srcCompat="@drawable/ic_baseline_translate_24"
+                    app:tint="?attr/colorPrimary" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    app:autoSizeTextType="uniform"
+                    android:text="Translate"
+                    android:textColor="?attr/colorPrimary"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <!--account view, i don't know-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_status_indicator"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="5dp"
+            android:src="@drawable/round_corner"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/tv_clientSavingAccountNumber"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lines="1"
+                android:text="Medium Text"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_savingAccountProductName"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Small text Mid Focus"
+                android:textSize="14sp"
+                android:textColor="#BB666666"/>
+
+            <TextView
+                android:id="@+id/tv_last_active"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:text="Small text"
+                android:textSize="14sp"
+                android:textColor="#ffd1d1d1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_account_balance"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_width="wrap_content"
+            android:text="Medium text"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+    <!--this kind of card, maybe merge this, clickable card and card with dropdown-->
+    <!--and make attributes to switch between them-->
+    <!--and get the inner items as map from label to value and show them(count should be limited)-->
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/circle_status"
+                android:layout_height="match_parent"
+                android:layout_width="5dp"
+                android:background="#669900"/>
+
+            <LinearLayout
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/tv_clientName"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:lines="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/black"
+                    android:text="Medium text" />
+
+                <TextView
+                    android:id="@+id/tv_due_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:text="Medium text" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:lines="1"
+                        android:text="Amount due"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_amount"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Medium text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:lines="1"
+                        android:text="Amount paid"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_amount_paid"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Medium text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:lines="1"
+                        android:text="Amount waived"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_amount_waived"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Medium text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:lines="1"
+                        android:text="Amount outstanding"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_amount_outstanding"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Medium text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!--clickable card with image styles: with/without background-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="64dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:layout_marginVertical="8dp"
+            app:srcCompat="@drawable/ic_baseline_translate_24"
+            app:tint="@color/mf_primary" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:paddingEnd="8dp"
+            android:paddingStart="16dp">
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/tv_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:lines="1"
+                    android:text="Medium text"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Small text"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#BB666666"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Small text"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#BB666666"/>
+
+                <TextView
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Small text"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#BB666666"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+<!--    text fields-->
+    <org.mifos.ui.components.MfEditTextLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp">
+        <org.mifos.ui.components.MfEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Simple Edit Text"/>
+    </org.mifos.ui.components.MfEditTextLayout>
+
+    <org.mifos.ui.components.MfEditTextLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:endIconMode="custom"
+        android:layout_marginBottom="8dp"
+        app:endIconDrawable="@drawable/ic_baseline_qr_code_scanner_24">
+        <org.mifos.ui.components.MfEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Edit Text fillable with QR"/>
+    </org.mifos.ui.components.MfEditTextLayout>
+
+    <org.mifos.ui.components.MfEditTextLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:passwordToggleEnabled="true">
+        <org.mifos.ui.components.MfEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+    </org.mifos.ui.components.MfEditTextLayout>
+
+
+    <org.mifos.ui.components.MfPinEntryEditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:maxLength="6"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click here"
+        android:textColor="@color/link_color"
+        android:layout_marginVertical="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank Name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Account Holder Name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Branch name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="IFSC Code"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Type"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#212121"
+                android:text="Internation Bank"/>
+
+            <TextView
+                android:id="@+id/tv_account_holder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#212121"
+                android:text="John Doe"/>
+
+            <TextView
+                android:id="@+id/tv_branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#212121"
+                android:text="Sample Branch"/>
+
+            <TextView
+                android:id="@+id/tv_ifsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#212121"
+                android:text="XXXXXXX"/>
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#212121"
+                android:text="Sample type"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+<!--    other miscellaneous-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_transaction_status"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_restore_24"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_transaction_status"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_transaction_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3r23f3ifelnfaed"
+                android:textColor="@color/mf_primary"/>
+
+            <TextView
+                android:id="@+id/tv_transaction_date"
+                android:layout_width="match_parent"
+                android:text="22 June 2022"
+                android:layout_height="wrap_content"
+                android:textColor="#696969"/>
+
+            <TextView
+                android:id="@+id/tv_receiptId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textColor="#212121"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_transaction_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="done"
+                android:layout_gravity="bottom"
+                android:textColor="#696969"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_transaction_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="$100"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#44000000"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_from_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ll_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_fromImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_person"/>
+
+            <TextView
+                android:id="@+id/tv_fromClientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Client Name"
+                android:textColor="#212121"/>
+
+            <TextView
+                android:id="@+id/tv_fromAccountNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Account"
+                android:textColor="#212121"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_send"
+            android:foregroundGravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/ll_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_toImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_person"/>
+
+            <TextView
+                android:id="@+id/tv_toClientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Client Name"
+                android:textColor="#212121"/>
+
+            <TextView
+                android:id="@+id/tv_toAccountNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Account"
+                android:textColor="#212121"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_height="wrap_content">
+
+        <org.mifos.ui.components.MfEditTextLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <org.mifos.ui.components.MfEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Simple Edit Text"/>
+        </org.mifos.ui.components.MfEditTextLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+</ScrollView>

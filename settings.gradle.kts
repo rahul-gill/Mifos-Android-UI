@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "MifosUI"
-include ':demoApp'
-include ':design'
-include ':components'
+include(":demoApp")
+include(":design")
+include(":components")

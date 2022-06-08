@@ -35,6 +35,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    applicationVariants.all {
+        val lintTask = tasks["lint"]
+        assembleProvider.get().dependsOn.addAll(listOf(lintTask))
+    }
 }
 
 dependencies {
@@ -42,6 +47,8 @@ dependencies {
     implementation(Dependencies.ANDROID_MATERIAL)
     implementation(Dependencies.CONSTRAINT_LAYOUT)
     implementation(project(":components"))
+
+    lintChecks(project(":lint_check"))
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")

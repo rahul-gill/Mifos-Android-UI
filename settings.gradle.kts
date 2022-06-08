@@ -16,3 +16,4 @@ rootProject.name = "MifosUI"
 include(":demoApp")
 include(":design")
 include(":components")
+include(":lint_check")
